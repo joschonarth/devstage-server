@@ -26,3 +26,7 @@ GET http://localhost:3333/subscribers/{{subscriberId}}/ranking/count
 ###
 
 GET http://localhost:3333/subscribers/{{subscriberId}}/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
