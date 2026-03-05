@@ -11,9 +11,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.40",
     "@fastify/cors": "^11.2.0",
     "@fastify/swagger": "^9.7.0",
     "@fastify/swagger-ui": "^5.2.5",
+    "ai": "^6.0.115",
     "drizzle-orm": "^0.45.1",
     "fastify": "^5.7.4",
     "fastify-type-provider-zod": "^6.1.0",

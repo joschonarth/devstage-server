@@ -24,7 +24,7 @@
 
 ## 📃 Sobre
 
-O **devstage** é uma aplicação web de sistema de indicações e convites para eventos, e este repositório contém a **API REST** que a alimenta. Por meio dela é possível cadastrar participantes em eventos, gerar links únicos de convite, registrar acessos e inscrições originadas por cada link e calcular o ranking global de indicações em tempo real. O backend é construído com **Node.js**, **Fastify**, **PostgreSQL** e **Redis**.
+O **devstage** é uma aplicação web de sistema de indicações e convites para eventos, e este repositório contém a **API REST** que a alimenta. Por meio dela é possível cadastrar participantes em eventos, gerar links únicos de convite, registrar acessos e inscrições originadas por cada link e calcular o ranking global de indicações em tempo real. Além disso, a API conta com um **agente de inteligência artificial** capaz de consultar métricas do evento diretamente no **PostgreSQL** e **Redis** e gerar respostas inteligentes sobre desempenho, acessos e conversões de convites. O backend é construído com **Node.js**, **Fastify** e **Drizzle ORM**.
 
 ---
 
@@ -40,6 +40,7 @@ O **devstage** é uma aplicação web de sistema de indicações e convites para
 - 📖 **[Swagger](https://swagger.io/)** — Documentação interativa da API via `@fastify/swagger`.
 - 🛡️ **[Zod](https://zod.dev/)** — Validação e parsing de schemas com inferência de tipos.
 - 🔍 **[Biome](https://biomejs.dev/)** — Linting e formatação de código de alta performance.
+- 🤖 **[Vercel AI SDK](https://ai-sdk.dev/)** — Criação de agente de IA com tool calling para consulta de métricas do evento.
 
 ---
 
@@ -52,6 +53,8 @@ O **devstage** é uma aplicação web de sistema de indicações e convites para
 - [x] 🎯 Contagem de inscrições geradas pelo link
 - [x] 🏆 Posição do participante no ranking de indicações
 - [x] 🌍 Ranking global de indicações em tempo real
+- [x] 🤖 Agente de IA para consulta de métricas do evento
+- [x] 🧠 Geração de respostas inteligentes com base em dados do PostgreSQL e Redis
 - [x] 🛡️ Validação de dados com Zod
 - [x] 📖 Documentação interativa da API com Swagger
 
@@ -114,6 +117,18 @@ npm run dev
 ```
 
 O servidor estará disponível em **[http://localhost:3333](http://localhost:3333)**.
+
+---
+
+## 🤖 IA & Analytics
+
+O projeto conta com um **agente de inteligência artificial** desenvolvido com o **Vercel AI SDK**, utilizando **tool calling** para acessar dados do sistema.
+
+Esse agente é capaz de:
+
+- Consultar métricas de convites no PostgreSQL
+- Obter contagem de acessos armazenada no Redis
+- Gerar respostas inteligentes sobre o desempenho de eventos e participantes
 
 ---
 
