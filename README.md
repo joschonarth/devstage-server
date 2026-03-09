@@ -2,7 +2,7 @@
 
 <img alt="devstage" src="https://github.com/joschonarth/devstage-web/blob/master/src/assets/logo.svg" />
 
-# devstage API
+# 📨 devstage API
 
 *Indique, convide e suba no ranking.*
 
